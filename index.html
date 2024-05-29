@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Dark_cyan: "hsl(185, 75%, 39%)",
+              Very_dark_desaturated_blue: "hsl(229, 23%, 23%)",
+              Dark_grayish_blue: "hsl(227, 10%, 46%)",
+            },
+            fontFamily: {
+              Kumbh_Sans: ["Kumbh Sans"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-screen flex flex-col items-center justify-center bg-Dark_cyan"
+  >
+    <div class="rounded-xl bg-white w-[326px] h-[374px]">
+      <img
+        src="images/bg-pattern-top.svg"
+        alt="cyan circle"
+        class="absolute top-[-350px] z-[-2] right-[150px] bottom-[500px] w-[622px] h-[621px]"
+      />
+      <div class="flex flex-col items-center justify-center">
+        <img
+          src="images/bg-pattern-card.svg"
+          alt="card image"
+          class="w-[326px] h-[140px] rounded-tr-xl rounded-tl-xl"
+        />
+        <div class="flex items-center justify-center gap-3 mt-[65px]">
+          <h1
+            class="text-xl text-Very_dark_desaturated_blue font-Kumbh_Sans font-bold"
+          >
+            Victor Crest
+          </h1>
+          <p class="">26</p>
+        </div>
+        <p>London</p>
+        <img
+          src="images/image-victor.jpg"
+          alt="victor image"
+          class="absolute top-[320px] rounded-full w-[96px] h-[96px] border-white border-[5px]"
+        />
+      </div>
+      <img
+        src="images/bg-pattern-bottom.svg"
+        alt="cyan circle"
+        class="absolute top-[450px] z-[-2] right-[-180px] bottom-[0px] w-[622px] h-[621px]"
+      />
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
